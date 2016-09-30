@@ -205,7 +205,8 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 20px;
-    line-height: 40px; }
+    line-height: 40px;
+    cursor: pointer; }
     .work-headings h2:nth-child(1) {
       left: 0; }
     .work-headings h2:nth-child(2) {

@@ -65,7 +65,29 @@ $(function() {
       slide = 3;
     });
 
-    $('next').click(function() {
+    $('.next').click(function() {
+      var nextSlide;
+      if (slide == 1) {
+        nextSlide = 2;
+      } else if(slide == 2) {
+        nextSlide = 3;
+      } else {
+        nextSlide = 1;
+      }
+       $('.work-headings h2:nth-child('+nextSlide+')').trigger('click');
+       $(this).blur();
+    });
 
-    })
+    $('.prev').click(function() {
+      var prevSlide;
+      if (slide == 1) {
+        prevSlide = 3;
+      } else if(slide == 2) {
+        prevSlide = 1;
+      } else {
+        prevSlide = 2;
+      }
+       $('.work-headings h2:nth-child('+prevSlide+')').trigger('click');
+       $(this).blur();
+    });
 })
