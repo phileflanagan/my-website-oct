@@ -1,7 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Raleway:300,700';
-.gray {
-  color: #666; }
-
 .center-mid {
   position: absolute;
   top: 50%;
@@ -90,6 +87,7 @@ section {
       margin-left: -10px;
       letter-spacing: -10px; }
     .splash .splash-text h2 {
+      color: #666;
       margin: 20px 0;
       padding: 0;
       font-family: "Open Sans", sans-serif;
@@ -148,12 +146,56 @@ section {
   .rating-column p {
     text-align: right; } }
 
+.work {
+  background-color: #eee; }
+  .work h1 {
+    color: #9b7543;
+    font-size: 50px;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: 700;
+    text-align: center; }
+
+.show-work {
+  position: relative;
+  min-width: 60vw;
+  height: 60vh; }
+
+.underline {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 73px;
+  border-bottom: 3px solid #9b7543; }
+
+.work-headings {
+  width: 100%;
+  height: 40px; }
+  .work-headings h2 {
+    margin: 0;
+    display: inline;
+    color: #666;
+    position: absolute;
+    top: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    line-height: 40px; }
+    .work-headings h2:nth-child(1) {
+      left: 0; }
+    .work-headings h2:nth-child(2) {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .work-headings h2:nth-child(3) {
+      right: 0; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 body {
   background: #f5f5f5;
-  min-height: 100vh;
-  min-width: 100vw;
   overflow-x: hidden; }
