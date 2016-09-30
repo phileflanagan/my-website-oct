@@ -1,0 +1,20 @@
+@import 'colors';
+@import 'maps';
+@import 'typography';
+@import 'positioning';
+
+@import 'section';
+@import 'nav';
+@import 'splash';
+@import 'skills';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background: #f5f5f5;
+	min-height: 100vh;
+	min-width: 100vw;
+  overflow-x: hidden;
+}

@@ -1,0 +1,9 @@
+$gray: #666;
+$blue: #565fa3;
+$lblue: lighten($blue,20);
+$brown: #9b7543;
+
+$overlay: rgba(0,0,0,0.2);
+.gray {
+  color: $gray;
+}
