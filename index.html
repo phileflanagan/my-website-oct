@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
+  <div class="mobilepsst">
+    hey, check out this site on your laptop instead ;)
+  </div>
   <nav class="sidenav">
   	<ul>
-  		<a href="#"><li>Home</li></a>
-      <a href="#"><li>Skills</li></a>
-      <a href="#"><li>Work</li></a>
-      <a href="#"><li>Case Study</li></a>
-      <a href="#"><li>Contact</li></a>
+  		<a href="#nav-home"><li>Home</li></a>
+      <a href="#nav-skills"><li>Skills</li></a>
+      <a href="#nav-work"><li>Work</li></a>
+      <a href="#nav-case"><li>Case Study</li></a>
+      <a href="#nav-contact-bottom"><li>Contact</li></a>
   	</ul>
   </nav>
-  <section class="splash">
+  <div class="wrapper">
+
+  <section class="splash" id="nav-home">
   	<div class="center-mid splash-text">
       <h1 class="pre-h1">The Online Portfolio of</h1>
   		<h1 class="gray">Phil Flanagan</h1>
   		<h2 class="gray">Web Developer // Lifelong Learner</h2>
   	</div>
   </section>
-  <section class="skills">
+  <section class="skills" id="nav-skills">
     <div class="center-mid">
       <h1>Skills</h1>
       <div class="column-group">
@@ -59,9 +65,9 @@
       </div>
     </div>
   </section>
-  <section class="work">
+  <section class="work" id="nav-work">
     <div class="center-mid">
-      <h1>Feature Projects</h1>
+      <h1>Featured Projects</h1>
       <div class="show-work">
         <button class="prev">&lsaquo;</button><button class="next">&rsaquo;</button>
         <div class="work-headings">
@@ -71,27 +77,44 @@
           <span class="underline"></span>
         </div>
         <article class="featured" id="project1">
-          Test Project 1
+          <p>
+            Wayfarers polaroid cold-pressed synth gentrify XOXO, knausgaard microdosing crucifix pork belly cardigan. Echo park tofu deep v, edison bulb fashion axe crucifix chicharrones cornhole pabst meh church-key austin pop-up brooklyn raw denim. Small batch asymmetrical cliche, thundercats hella 90's sustainable. Swag trust fund woke, PBR&B kinfolk ethical subway tile seitan. Activated charcoal butcher chambray, deep v hashtag ennui PBR&B. Squid normcore ugh synth craft beer, bespoke hoodie. Salvia bitters pop-up hexagon.
+          </p>
         </article>
         <article class="featured" id="project2">
-          Test Project 2
+          <p>
+            Ugh blue bottle venmo, post-ironic marfa enamel pin godard flannel pop-up. Pitchfork literally humblebrag, glossier swag hashtag mixtape direct trade kombucha tattooed asymmetrical fap hexagon. Aesthetic scenester unicorn, gochujang gentrify fashion axe raw denim intelligentsia knausgaard pitchfork gastropub woke bicycle rights. Thundercats selfies blue bottle forage normcore. Bitters mumblecore roof party butcher lo-fi hashtag, plaid affogato thundercats street art mustache. Try-hard photo booth messenger bag, franzen meggings paleo ethical vape. Lo-fi bitters hashtag, slow-carb offal YOLO vaporware semiotics distillery banh mi af deep v ethical raw denim.
+          </p>
         </article>
         <article class="featured" id="project3">
-          Test Project 3
+          <p>
+            Hot chicken twee kitsch green juice pitchfork iceland. La croix scenester shoreditch vinyl pinterest heirloom paleo. Seitan fingerstache vegan, schlitz fam cray whatever organic plaid cred raclette actually bespoke. 90's plaid sartorial flannel venmo meh. Live-edge shoreditch marfa gentrify prism. Butcher banjo meditation, you probably haven't heard of them tacos keffiyeh biodiesel. Swag cold-pressed iceland, listicle bespoke pour-over skateboard tousled tacos lomo distillery gastropub yr farm-to-table banjo.
+          </p>
         </article>
       </div>
     </div>
   </section>
-  <section class="case-study">
+  <section class="case-study" id="nav-case">
     <div class="center-mid">
-      <h1>Skills</h1>
+      <h1>Case Study</h1>
+      <div class="divider"></div>
+      <img src="/img/casestudy.png" alt="Web Dev Case Study Green Apple Dog" />
     </div>
   </section>
-  <section class="contact">
-    <div class="center-mid">
-      <h1>Skills</h1>
+  <section class="contact" id="nav-contact">
+    <div class="">
+      <h1>Find Me</h1>
+      <ul>
+        <li><a href="/resume"><i class="fa fa-desktop"></i><span>Resume Web Version</span></a></li>
+        <li><a href="/resume.pdf"><i class="fa fa-file-pdf-o"></i><span>Resume PDF Version</span></a></li>
+        <li><a href="mailto:phileflanagan@gmail.com"><i class="fa fa-envelope"></i><span>Email Me</span></a></li>
+        <li><a href="http://github.com/phileflanagan"><i class="fa fa-github"></i><span>My Github</span></a></li>
+        <li><a href="http://letiequalzero.com"><i class="fa fa-user-secret"></i><span>My Blog</span></a></li>
+      </ul>
     </div>
   </section>
+  <div id="nav-contact-bottom"></div>
+  </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/index.js"></script>
 </body>

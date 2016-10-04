@@ -48,6 +48,7 @@
 
 @media (max-width: 768px) {
   .skills h1 {
+    font-size: 20px;
     margin-bottom: 0;
   }
   .skill-column, .rating-column {
@@ -55,5 +56,11 @@
   }
   .rating-column p {
     text-align: right;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-column p, .rating-column p{
+    font-size: 12px;
   }
 }

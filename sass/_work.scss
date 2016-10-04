@@ -14,7 +14,7 @@
   position: relative;
   min-width: 60vw;
   height: 60vh;
-  border: 2px solid $brown;
+  border: 3px solid rgba(0,0,0,0.2);
 
   button {
     padding: 10px 15px;
@@ -34,22 +34,22 @@
       right: -50px;
     }
     &:hover {
-      background-color: rgba(0,0,0,0.5);
+      background-color: $blue;
     }
   }
 }
 
 .underline {
   position: absolute;
-  top: 40px;
-  left: 0;
+  top: 47px;
+  left: 2%;
   width: 75px;
   border-bottom: 3px solid $brown;
   transition: all 350ms ease-in-out;
 }
 .work-headings {
   width: 100%;
-  height: 40px;
+  height: 50px;
   // background-color: blue;
   h2 {
     margin: 0;
@@ -62,21 +62,123 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 50px;
     cursor: pointer;
     &:nth-child(1) {
-      left: 0;
+      left: 2%;
     }
     &:nth-child(2) {
       left: 50%;
       transform: translateX(-50%);
     }
     &:nth-child(3) {
-      right: 0;
+      right: 2%;
     }
   }
 }
 
 .featured {
-  padding: 20px 0;
+  p {
+    font: 18px/2 $opensans;
+    padding: 2%;
+    margin: 0;
+    color: $gray;
+  }
+}
+
+#project2, #project3 {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .show-work {
+    .work-headings {
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+  .work {
+    h1 {
+      font-size: 45px;
+    }
+  }
+  .featured {
+    p {
+      font: 16px/2 $opensans
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .show-work {
+    .work-headings {
+      h2 {
+        font-size: 17px;
+      }
+    }
+  }
+  .work {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .featured {
+    p {
+      font: 14px/2 $opensans
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .show-work {
+    min-width: 80vw;
+    .work-headings {
+      h2 {
+        font-size: 14px;
+      }
+    }
+  }
+  .work {
+    h1 {
+      font-size: 30px;
+    }
+  }
+  .featured {
+    p {
+      font: 12px/2 $opensans
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .show-work {
+    min-width: 90vw;
+    .work-headings {
+      h2 {
+        font-size: 10px;
+      }
+    }
+    button {
+      top: -27px;
+      &.prev {
+        left: 10px;
+      }
+      &.next {
+        right: 10px;
+      }
+    }
+  }
+  .work {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  .featured {
+    p {
+      font: 11px/2 $opensans
+    }
+  }
+
 }
